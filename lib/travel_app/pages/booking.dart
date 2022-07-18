@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+import '../apis_handling.dart';
 import '../components/styles.dart';
 import '../widget/elevated_button.dart';
 import 'booking_detail.dart';
@@ -153,11 +154,15 @@ class _BookingState extends State<Booking> {
             ),
             const SizedBox(height: 16),
             MyElevatedButton(
-                onPressed: () {
+                onPressed: () async{
+
+                  await ApiHandling.booking();
                   Navigator.push(
                       context,
                       MaterialPageRoute(
                           builder: (context) =>  BookingDetail()));
+
+
                 },
                 text: 'Continue',
                 colors: appColor,

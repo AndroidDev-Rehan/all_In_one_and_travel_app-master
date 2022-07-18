@@ -1,5 +1,5 @@
 {
-  "laravel_base_url": "https://home-services.smartersvision.com/",
+  "laravel_base_url": "http://zefi.ae/",
   "api_path": "api/",
   "received": 1,
   "accepted": 10,
@@ -9,5 +9,3 @@
   "done": 50,
   "failed": 60
 }
-
-
